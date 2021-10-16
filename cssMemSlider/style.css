@@ -53,7 +53,7 @@ body {
 }
 
 .slider__control:before {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
 
@@ -69,8 +69,8 @@ body {
 }
 
 .slider__control:after {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 5%;
   left: 50%;
 
   content: '';
@@ -86,12 +86,7 @@ body {
 }
 
 .slider__input {
-  position: absolute;
-  bottom: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  display: none;
 }
 
 .slider__input:nth-child(1):checked ~ .slider__controls .slider__control:nth-child(1):after,
@@ -122,4 +117,34 @@ body {
 }
 .slider__input:nth-child(4):checked ~ .slider__images .slider__image {
   transform: translateX(-300%);
+}
+
+.slider__texts {
+  width: 100%;
+
+  overflow: hidden;
+}
+.wrapper__texts {
+  display: flex;
+  width: 400%;
+}
+
+.slider__text {
+  width: 25%;
+
+  transform: translateX(-200%);
+  transition: transform 0.5s;
+}
+
+.slider__input:nth-child(1):checked ~ .slider__texts .slider__text {
+  transform: translateX(-300%);
+}
+.slider__input:nth-child(2):checked ~ .slider__texts .slider__text {
+  transform: translateX(-200%);
+}
+.slider__input:nth-child(3):checked ~ .slider__texts .slider__text {
+  transform: translateX(-100%);
+}
+.slider__input:nth-child(4):checked ~ .slider__texts .slider__text {
+  transform: translateX(0);
 }

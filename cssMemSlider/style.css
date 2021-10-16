@@ -38,6 +38,7 @@ body {
   width: 100%;
 
   transform: translateX(-200%);
+  transition: transform 0.5s;
 }
 
 .slider__control {
@@ -108,4 +109,17 @@ body {
 
 .slider__control:active {
   background: radial-gradient(circle, rgba(var(--control-color-rgb), 0.3) 0%, #fff 100%);
+}
+
+.slider__input:nth-child(1):checked ~ .slider__images .slider__image {
+  transform: translateX(0);
+}
+.slider__input:nth-child(2):checked ~ .slider__images .slider__image {
+  transform: translateX(-100%);
+}
+.slider__input:nth-child(3):checked ~ .slider__images .slider__image {
+  transform: translateX(-200%);
+}
+.slider__input:nth-child(4):checked ~ .slider__images .slider__image {
+  transform: translateX(-300%);
 }

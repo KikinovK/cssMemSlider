@@ -1,6 +1,7 @@
 :root {
   --control-color: #5588aa;
   --control-color-rgb: 85, 136, 170;
+  --text-color: #aaaaaa;
 }
 * {
   box-sizing: border-box;
@@ -131,6 +132,13 @@ body {
 
 .slider__text {
   width: 25%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  font-family: sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--text-color);
 
   transform: translateX(-200%);
   transition: transform 0.5s;

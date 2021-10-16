@@ -1,3 +1,3 @@
 # cssMemSlider
 
-[cssMemSlider link](https://${YOUR_GITHUB_NAME}.github.io/cssMemSlider/cssMemSlider/index.html)
+[cssMemSlider link](https://KikinovK.github.io/cssMemSlider/cssMemSlider/index.html)

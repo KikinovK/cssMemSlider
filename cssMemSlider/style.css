@@ -49,13 +49,14 @@ body {
 .slider__controls {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 0.1em;
   width: 30%;
 }
 @media (max-width: 768px) {
   .slider__controls {
     justify-content: center;
+    align-items: center;
     order: 2;
     width: 100%;
   }
@@ -160,8 +161,6 @@ body {
 
 .slider__text {
   width: 25%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 
   font-family: sans-serif;
   font-size: 2rem;

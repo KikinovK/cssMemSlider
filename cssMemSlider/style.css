@@ -120,11 +120,11 @@ body {
 }
 
 .slider__control:hover {
-  background: radial-gradient(circle, #fff 0%, rgba(var(--control-color-rgb), 0.3) 100%);
+  background: radial-gradient(circle, transparent 0%, rgba(var(--control-color-rgb), 0.3) 100%);
 }
 
 .slider__control:active {
-  background: radial-gradient(circle, rgba(var(--control-color-rgb), 0.3) 0%, #fff 100%);
+  background: radial-gradient(circle, rgba(var(--control-color-rgb), 0.3) 0%, transparent 100%);
 }
 
 .slider__input:nth-child(1):checked ~ .slider__images .slider__image {
